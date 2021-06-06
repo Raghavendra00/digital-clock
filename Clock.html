@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, 
+		initial-scale=1.0" />
+
+	<title>Digital Clock</title>
+
+	<style>
+		.design {
+			font-size: 155px;
+			margin: 50px 200px;
+			text-align: center;
+			border: 8px solid black;
+			color: red;
+
+			text-align: center;
+
+		}
+
+		#layout {
+			background-color: black;
+		}
+
+
+
+		#clock {
+			background-color: azure;
+		}
+
+		#date {
+			background-color: blanchedalmond;
+		}
+	</style>
+</head>
+
+<body onload=" showTime(); setInterval('showTime()',1000)" onclick="showdate()">
+	<h1 style="text-align: center; font-size:75px;">Time and Date</h1>
+	<div id="layout">
+		<div id="clock" class="design"></div>
+
+		<div id="date" class="design">4.09.2000</div>
+	</div>
+
+</body>
+<script src="Clock.js"></script>
+
+</html>
